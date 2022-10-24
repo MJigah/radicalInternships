@@ -1,0 +1,92 @@
+{
+  "user": [
+    {
+      "user_id": "String",
+      "email": "String",
+      "password": "String"
+    }
+  ],
+  "user_internship": [
+    {
+      "user_id": "String",
+      "internship_id": "String"
+    }
+  ],
+  "intenships": [
+    {
+      "internship_id": "String",
+      "internship_description": {
+        "category": ["Development", "Technology"],
+        "description": "Radical Intenship description know-how",
+        "location": "Nigeria",
+        "benefits": "Sample benefits",
+        "intro_video": "https://videos/intro_video_link",
+        "mentor_details": {
+          "image-Profile": "https://image/profile_image_link",
+          "name": "Mentor name",
+          "email": "mentorname@gmail.com",
+          "linkedIn_url": "https://linkedin.com/mentor"
+        },
+        "recommended_roles": ["FullStack_dev", "FrontEnd_dev"],
+        "wlink": ["https://demo-link-2", "https://demo-link-1"]
+      },
+      "active": "Boolean",
+      "internship_guide": {
+        "overview": {
+          "brief": [
+            "internship_overview_brief_1",
+            "internship_overview_brief_2"
+          ],
+          "requirements": [
+            "internship_requirements_1",
+            "internship_requirements_2"
+          ],
+          "milestones": [
+            "internship_milestones_1",
+            "internship_milestones_2",
+            "internship_milestones_3"
+          ]
+        },
+        "schedule": {
+          "duration": "internship_duration",
+          "timeline": "internship_timeline",
+          "deliverables": [
+            "internship_deliverables_1",
+            "internship_deliverables_2",
+            "internship_deliverables_4"
+          ]
+        },
+        "resources": {
+          "curated_resources": [
+            "internship_resource_1",
+            "internship_resource_3",
+            "internship_resource_5"
+          ],
+          "events": [
+            "internship_events_1",
+            "internship_events_2",
+            "internship_events_3",
+            "internship_events_4"
+          ]
+        }
+      },
+      "internship_survey": {
+        "survey_1": "What so you think about suvery1?",
+        "survery_2": "What so you think about suvery2?",
+        "survery_3": "What so you think about suvery3?"
+      },
+      "internship_setting": {
+        "basic_settings": {
+          "internship_url": "http://radicalxinternship.com",
+          "access": "private_internship",
+          "security": "disable_text_copying"
+        },
+        "hero_image": {
+          "internship_url": "http://radicalxinternship.com",
+          "access": "private_internship",
+          "security": "disable_text_copying"
+        }
+      }
+    }
+  ]
+}
