@@ -6,6 +6,7 @@ const fs = require("fs");
 const swaggerUI = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc')
 const userRoutes = require('./routes/userRoutes')
+const UInternRoutes = require('./routes/UInternshipRoutes')
 const PORT = process.env.PORT || 3000;
 
 const app = express();
@@ -41,7 +42,11 @@ const specs = swaggerJsDoc(options)
 app.use(cors());
 app.use(express.json());
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(specs))
+
+//====== SETUP ROUTES ======================================
 app.use('/api/user', userRoutes)
+app.use('/api/user', UInternRoutes)
+//==========================================================
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
