@@ -1,6 +1,6 @@
 const express = require('express');
 const asyncHandler = require('express-async-handler');
-const {addUserIntern} = require('../controllers/userInternship');
+const {addUserIntern} = require('../controllers/userInternshipController');
 const router = express.Router();
 
 /**
