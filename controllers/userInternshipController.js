@@ -5,8 +5,8 @@ const UserInternship = require('../models/userIntership');
 const addUserIntern = async(req, res, next) => {
     try {
         const data = req.body;
-        await addDoc(collection(db, UserInternship), data)
-        res.send('User added successfully')
+        await addDoc(collection(db, 'UserInternship'), data)
+        res.send('User Intern added successfully')
     } catch (error) {
         res.status(400).send(error.message)
     }

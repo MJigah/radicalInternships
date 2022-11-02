@@ -36,7 +36,7 @@ router.get(
  * @swagger
  * '/api/user/':
  *  post:
- *   summary: Get User details
+ *   summary: Create New User data
  *   tags: [User]
  *   requestBody:
  *      required: true

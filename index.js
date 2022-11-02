@@ -7,6 +7,7 @@ const swaggerUI = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc')
 const userRoutes = require('./routes/userRoutes')
 const UInternRoutes = require('./routes/UInternshipRoutes')
+const internRoutes = require('./routes/internRoutes')
 const PORT = process.env.PORT || 3000;
 
 const app = express();
@@ -45,7 +46,8 @@ app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(specs))
 
 //====== SETUP ROUTES ======================================
 app.use('/api/user', userRoutes)
-app.use('/api/user', UInternRoutes)
+app.use('/api/uintern', UInternRoutes)
+app.use('/api/intern', internRoutes)
 //==========================================================
 
 app.listen(PORT, () => {

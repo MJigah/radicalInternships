@@ -7,7 +7,7 @@ const router = express.Router();
  * @swagger
  * components:
  *   schemas:
- *      User:
+ *      User Internship:
  *        type: object
  *        required:
  *          - user_id
@@ -36,8 +36,8 @@ router.get(
  * @swagger
  * '/api/uintern/':
  *  post:
- *   summary: Get User details
- *   tags: [User]
+ *   summary: Create New User Intern data
+ *   tags: [User Internship]
  *   requestBody:
  *      required: true
  *      content:
