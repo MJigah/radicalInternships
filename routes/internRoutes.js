@@ -11,7 +11,6 @@ const router = express.Router();
  *        type: object
  *        required:
  *          - internship_description
- *          - active
  *          - internship_survey
  *          - internship_guide
  *          - internship_setting
@@ -19,9 +18,6 @@ const router = express.Router();
  *          internship_description:
  *            type: Object
  *            description: The description of the internship
- *          active:
- *            type: Boolean
- *            description: The status of the internship
  *          internship_guide:
  *            type: Object
  *            description: The guide of the Internship
@@ -61,7 +57,6 @@ router.get(
  *          - internship_setting
  *        example:
  *          internship_description: {}
- *          active: false
  *          internship_survey: {}
  *          internship_guide: {}
  *          internship_setting: {}
