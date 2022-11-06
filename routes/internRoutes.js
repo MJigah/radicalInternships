@@ -22,7 +22,7 @@ const router = express.Router();
  *            type: Object
  *            description: The guide of the Internship
  *          internship_survey:
- *            type: Object
+ *            type: Array
  *            description: The survey of the Intenship
  *          internship_setting:
  *            type: Object
@@ -57,7 +57,7 @@ router.get(
  *          - internship_setting
  *        example:
  *          internship_description: {}
- *          internship_survey: {}
+ *          internship_survey: []
  *          internship_guide: {}
  *          internship_setting: {}
  *   responses:

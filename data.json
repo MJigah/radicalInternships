@@ -70,11 +70,11 @@
           ]
         }
       },
-      "internship_survey": {
-        "survey_1": "What so you think about suvery1?",
-        "survery_2": "What so you think about suvery2?",
-        "survery_3": "What so you think about suvery3?"
-      },
+      "internship_survey": [
+        { "survey_1": "What so you think about suvery1?" },
+        { "survey_2": "What so you think about suvery2?" },
+        { "survey_3": "What so you think about suvery3?" }
+      ],
       "internship_setting": {
         "basic_settings": {
           "internship_url": "http://radicalxinternship.com",
